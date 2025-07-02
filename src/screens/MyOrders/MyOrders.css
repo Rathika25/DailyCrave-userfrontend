@@ -1,0 +1,41 @@
+.my-orders {
+  padding: 40px 10%;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.my-orders h2 {
+  margin-bottom: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.my-orders-order {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--card-bg); /* adaptive */
+  color: var(--text-color);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  gap: 1rem;
+}
+
+.my-orders-order span {
+  color: var(--primary-color);
+}
+
+.my-orders-order button {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+}

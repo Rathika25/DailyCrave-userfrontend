@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+  --bg-color: #fff9e6; 
+  --text-color: #222222;
+  --card-bg: #fffdf2;
+  --primary-color: #ffbf00; 
+  --accent-color: #ffde59;  
+  --border-color: #e0d9b8;
+}
+
+
+.dark-mode {
+  --bg-color: #1e1e1e;
+  --text-color: #eeeeee;
+  --card-bg: #2c2c2c;
+  --primary-color: #ffd700;
+  --accent-color: #f8c102;
+  --border-color: #333333;
+}
+body, .app {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+
+
+*{
+  padding:5px;
+  margin:0;
+  box-sizing:border-box;
+  font-family:'Outfit';
+  scroll-behavior: smooth;
+  
+}
+html{
+  font-size:  62.5%;
+}
+body{
+  min-width: 100vh;
+  font-size: 1.6rem;
+  
+}
+a{
+  text-decoration: none;
+  color:inherit;
+
+}
+.app {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.app.dark-mode {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.app.dark-mode .sidebar,
+.app.dark-mode .cart,
+.app.dark-mode .navbar {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+
+
+
+
+
+@keyframes fadeIn{
+  0% {
+    opacity: 0;
+  }
+  100% { 
+    opacity: 100;
+  }
+
+}

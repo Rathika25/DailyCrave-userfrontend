@@ -1,0 +1,30 @@
+.place-order {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 10%;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.place-order input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  width: 100%;
+  margin-bottom: 1.2rem;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+.place-order input::placeholder {
+  color: #888;
+}
+
+.palce-order-left {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.place-order-right {
+  flex: 1;
+}
