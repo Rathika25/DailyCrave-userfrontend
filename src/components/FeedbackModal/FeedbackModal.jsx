@@ -12,7 +12,7 @@ const FeedbackModal = ({ setShowFeedback }) => {
     const feedback = e.target.feedback.value;
 
     try {
-      await axios.post("http://localhost:4000/api/feedback", { feedback });
+      await axios.post("https://dailycrave-backend1.onrender.com/api/feedback", { feedback });
       toast.success("Feedback submitted successfully!");
       setShowConfetti(true);
 
