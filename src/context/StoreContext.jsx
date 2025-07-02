@@ -7,7 +7,7 @@ const StoreContextProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState({});
   const [food_list, setFoodList] = useState([]);
   const [token, setToken] = useState(localStorage.getItem("token") || "");
-  const url = 'http://localhost:4000';
+  const url = 'https://dailycrave-backend1.onrender.com';
 
   const fetchFoodList = async () => {
     const response = await axios.get(url + '/api/food/list');
